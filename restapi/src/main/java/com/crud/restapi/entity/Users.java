@@ -1,6 +1,5 @@
 package com.crud.restapi.entity;
 
-import javax.annotation.Generated;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class User {
+public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -50,5 +49,4 @@ public class User {
     public void setUrlAvatar(String urlAvatar) {
         this.urlAvatar = urlAvatar;
     }
-
 }
